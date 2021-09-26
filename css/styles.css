@@ -315,24 +315,61 @@ header {
 .team-icon {
   fill: currentColor;
 }
+/* стили для секции clients */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-ref {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #afb1b8;
+}
+.clients-ref:hover,
+.clients-ref:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
+}
 
 /* стили для футера */
 footer {
   background-color: var(--hero-and-footer-background-color);
 }
 .location {
+  display: block;
   margin-top: 20px;
   font-style: normal;
   line-height: 1.71;
+}
+.location-ref {
   color: var(--background-color);
 }
+.location-ref:hover,
+.location-ref:focus {
+  color: var(--accent-color);
+}
+
 .contacts-footer,
 .contacts-footer-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.contacts-footer .contacts-footer-link:hover,
-.contacts-footer .contacts-footer-link:focus {
+.contacts.footer .contacts-footer-link:hover,
+.contacts.footer .contacts-footer-link:focus {
   color: var(--accent-color);
 }
 .page-footer {
@@ -457,4 +494,9 @@ footer {
 }
 .jobs-text {
   margin-top: 4px;
+}
+.jobs-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
