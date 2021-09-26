@@ -259,7 +259,7 @@ header {
   background-color: var(--team-background-color);
 }
 .team-article {
-  padding: 30px 0px;
+  padding: 30px 32px;
 }
 .team-member {
   font-weight: 500;
@@ -267,6 +267,7 @@ header {
 }
 .team-role {
   margin-top: 10px;
+  margin-bottom: 16px;
 }
 .team-list {
   display: flex;
@@ -288,6 +289,33 @@ header {
   line-height: 1.19;
   text-align: center;
 }
+.team-social-link {
+  display: flex;
+  justify-content: space-evenly;
+}
+.team-icon-social {
+  display: flex;
+  justify-content: center;
+}
+.icon-ref {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #afb1b8;
+  cursor: pointer;
+}
+.icon-ref:hover,
+.icon-ref:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.team-icon {
+  fill: currentColor;
+}
+
 /* стили для футера */
 footer {
   background-color: var(--hero-and-footer-background-color);
@@ -317,6 +345,54 @@ footer {
 .contacts.footer.link {
   margin-top: 9px;
 }
+.footer-social-link {
+  display: flex;
+  justify-content: start;
+}
+.footer-icon-social {
+  display: flex;
+  justify-content: center;
+}
+.footer-icon-ref {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: var(--background-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.footer-icon-ref:hover,
+.footer-icon-ref:focus {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+.footer-icon {
+  fill: currentColor;
+}
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+}
+.footer-invite-card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+.footer-main-flex {
+  display: flex;
+  align-items: baseline;
+}
+.footer-invite {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--background-color);
+}
+
 /* cтили для portfolio */
 .page-header {
   border-bottom: 1px solid #ececec;
