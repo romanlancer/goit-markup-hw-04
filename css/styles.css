@@ -4,10 +4,13 @@ body {
   font-size: 14px;
   color: var(--primary-text-color);
 }
-* {
+*,
+::before,
+::after {
   padding: 0;
   margin: 0;
   border: 0;
+  outline: 0;
 }
 
 :root {
@@ -326,7 +329,11 @@ header {
 }
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  margin-right: calc(-1 * var(--card-set-gap));
+}
+.clients-name {
+  flex-basis: calc(100% / 6 - var(--card-set-gap));
+  margin-right: var(--card-set-gap);
 }
 
 .clients-ref {
