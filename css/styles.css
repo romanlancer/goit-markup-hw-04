@@ -139,6 +139,7 @@ header {
 .mail-icon,
 .tel-icon {
   margin-right: 10px;
+  fill: currentColor;
 }
 .contacts-link {
   display: flex;
@@ -395,7 +396,9 @@ footer {
 }
 .footer-icon-social {
   display: flex;
-  justify-content: center;
+}
+.footer-icon-social:not(:last-child) {
+  margin-right: 10px;
 }
 .footer-icon-ref {
   width: 44px;
